@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+#navBar {
+    background-color:#1E2329;
+    padding:0;
+
+}
+.offcanvas, body {
+    font-family:'Ubuntu Condensed', sans-serif !important;
+}
+#mainTitle {
+    font-family:Architects Daughter;
+    color:#F5A302;
+    margin:auto;
+}
+#logo {
+    width:71px;
+    height:56px;
+}
+.dropdown-toggle {
+    width:45px;
+}
+.offcanvas {
+    height:fit-content;
+    width:120px;
+    letter-spacing: 1px;
+}
+.offcanvas-header {
+    color:#3B4046;
+    background-color:#F5A302;
+    height:55px;
+}
+.offcanvas-body{
+    background-color:#3B4046;
+    color:white;
+}
+a {
+    text-decoration:none;
+    
+}
+.dropdown-toggle {
+    border:none !important;
+    background-color:transparent !important;
+}
+.dropdown-toggle::after {
+    display:none
+}
+
+#cardMain {
+top:auto;
+background-color:#f5a402b9;
+text-align:start;
+  line-height: 1.4;
+}
+h5 {
+    -webkit-text-stroke: 0.3px black;
+}
+.card:hover {
+    box-shadow:black 2px 2px 2px;
+    transition:0.3s;
+    transform:scale(30px);
+}
+.card {
+border-radius:0 !important;
+border:0;
+}
+.card-body{
+   background-color:#FED154;
+}
+.card-img-top {
+    border:solid 6px #FED154;
+}
+.no-decoration {
+    text-decoration:none !important;
+}
+.normal-line-height {
+    line-height:3px !important;
+}
+.bg-transparent{
+    background:transparent;
+}
+.sharp-corner {
+    border-radius:0 !important;
+}
+.tiny-border {
+    border:solid  #FED154 1px !important;
+}
+.offset-card {
+    top:auto !important;
+background-color:#fed154bb !important;
+text-align:start !important;
+  line-height: 1.4 !important;
+}
+.gray-bg {
+    background-color:#C4C4C4;
+   font-size:12px;
+}
+.progress {
+    height:9px !important;
+}
+* {
+    padding:0;
+    margin:0;
+}
+.dropdown-menu  a{
+    &:hover{
+    color:#FED154 !important;
+    transition:1s;
+    }
+}
+
+
