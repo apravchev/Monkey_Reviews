@@ -12,6 +12,10 @@
     font-family:Architects Daughter;
     color:#F5A302;
     margin:auto;
+    cursor:context-menu !important;
+}
+.navbar-brand {
+    cursor:context-menu !important;
 }
 #logo {
     width:71px;
@@ -102,11 +106,18 @@ text-align:start !important;
     padding:0;
     margin:0;
 }
-.dropdown-menu  a{
+.dropdown-menu li{
     &:hover{
     color:#FED154 !important;
-    transition:1s;
+    background-color:#111418!important;
     }
 }
+@media screen and (min-width: 800px) {
+    .top10 p {
+        font-size:1.5em;     
+    }
+}
+
+
 
 

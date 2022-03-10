@@ -13,6 +13,11 @@
   font-family: Architects Daughter;
   color: #F5A302;
   margin: auto;
+  cursor: context-menu !important;
+}
+
+.navbar-brand {
+  cursor: context-menu !important;
 }
 
 #logo {
@@ -50,6 +55,7 @@ a {
 .dropdown-toggle {
   border: none !important;
   background-color: transparent !important;
+  margin: auto;
 }
 
 .dropdown-toggle::after {
@@ -130,9 +136,14 @@ h5 {
   margin: 0;
 }
 
-.dropdown-menu a:hover {
+.dropdown-menu li:hover {
   color: #FED154 !important;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-color: #111418 !important;
+}
+
+@media screen and (min-width: 800px) {
+  .top10 p {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
