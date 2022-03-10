@@ -27,56 +27,94 @@
       <button class="btn d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas">
         <img src="images/menu-btn.svg" alt="">
       </button>
-      <div style="margin-right:75px;" class="d-none d-sm-flex justify-content-between col-sm-4 col-lg-3 ">
-        <div class="dropdown dropdown-toggle btn">
+      <div style="margin-right:75px;" class="d-none d-sm-flex col">
+        <div class="dropdown dropdown-toggle col ">
           <a class="no-decoration dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink"
             data-bs-toggle="dropdown" aria-expanded="false">
             Категории
           </a>
           <ul class="dropdown-menu bg-dark p-3" aria-labelledby="dropdownMenuLink">
-              <li><a href="#" class="text-decoration-none text-white">Action</a></li>
-              <li><a href="#" class="text-decoration-none text-white">Horror</a></li>
-              <li><a href="#" class="text-decoration-none text-white">Adventure</a></li>
-              <li><a href="#" class="text-decoration-none text-white">MMO</a></li>
-              <li><a href="#" class="text-decoration-none text-white">RPG</a></li>
-              <li><a href="#" class="text-decoration-none text-white">FPS</a></li>
-              <li><a href="#" class="text-decoration-none text-white">Други...</a></li>
+            <a href="#" class="text-decoration-none text-white">
+              <li>Action</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>Horror</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>Adventure</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>MMO</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>RPG</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>FPS</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>Други...</li>
+            </a>
           </ul>
         </div>
-        <div class="dropdown dropdown-toggle btn">
+        <div class="dropdown dropdown-toggle col">
           <a class="no-decoration dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink"
             data-bs-toggle="dropdown" aria-expanded="false">
-            Конзоли
+            Платформи
           </a>
 
           <ul class="dropdown-menu bg-dark p-3" aria-labelledby="dropdownMenuLink">
-            <li><a href="#" class="text-decoration-none text-white">PC</a></li>
-            <li><a href="#" class="text-decoration-none text-white">PS4/5</a></li>
-            <li><a href="#" class="text-decoration-none text-white">XBOX S/X</a></li>
-            <li><a href="#" class="text-decoration-none text-white">SWITCH</a></li>
-            <li><a href="#" class="text-decoration-none text-white">По-стари...</a></li>
+            <a href="#" class="text-decoration-none text-white">
+              <li>PC</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>PS4/5</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>XBOX S/X</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>SWITCH</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>По-стари...</li>
+            </a>
           </ul>
         </div>
-        <div class="dropdown  dropdown-toggle btn ">
+        <div class="dropdown  dropdown-toggle col ">
           <a class="no-decoration dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink"
             data-bs-toggle="dropdown" aria-expanded="false">
             За нас
           </a>
           <ul style="left:-35px;" class="dropdown-menu bg-dark p-3" aria-labelledby="dropdownMenuLink">
-            <li><a href="#" class="text-decoration-none text-white">Нашият екип</a></li>
-            <li><a href="#" class="text-decoration-none text-white">Авторски права</a></li>
-            <li><a href="#" class="text-decoration-none text-white">Контакти</a></li>
+            <a href="#" class="text-decoration-none text-white">
+              <li>Нашият екип</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>Авторски права</li>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+              <li>Контакти</li>
+            </a>
           </ul>
         </div>
       </div>
 
       <div style="border-radius:0 0 0 6px; width:210px;" class="offcanvas offcanvas-end shadow" id="offCanvas">
+        
         <div class="offcanvas-header p-1">
           <h1 class="offcanvas-title display-4">Навигация</h1>
           <button type="button" class="btn" data-bs-dismiss="offcanvas"><img src="images/close-btn.svg" alt=""
               srcset=""></button>
         </div>
+        
         <div style="border-radius:0 0 0 5px;" class="offcanvas-body d-md-none p-1">
+          <div class="input-group my-1">
+            <input type="search" class="form-control rounded bg-dark" placeholder="Търси за.." aria-label="Search" aria-describedby="search-addon" />
+            <button id="search-button" type="button" class="btn btn-warning">
+              <img style="width:21px;" src="images/search-btn.svg">
+            </button>
+          </div>
           <button aria-expanded="true" class="dropdown-toggle text-white h2" data-bs-toggle="collapse"
             data-bs-target="#categoryList">Категории</button>
           <div id="categoryList" class="collapse show flex-column h4">
@@ -111,6 +149,7 @@
               <li><a href="#" class="text-decoration-none text-white">Контакти</a></li>
             </ul>
           </div>
+          
         </div>
       </div>
     </div>
@@ -131,7 +170,7 @@
           </div>
         </a>
         <div class="container-fluid p-1 ">
-          <div id="sBSCards" class="row gx-1 ">
+          <div id="sBSCards" class="row gx-1">
             <a href="#" class="col-6 no-decoration">
               <div class="card card-bordered  bg-transparent">
                 <img class="sharp-corner card-img-top" src="images/bg-dbd.png">
@@ -190,127 +229,127 @@
           <h2>Нашето Топ 10 на седмицата</h2>
         </div>
         <div class="top10 container-fluid p-0">
-        <div style="width:96%;" class=" container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col">Dark Souls 2 - Action, RPG, Adventure</p>
-            <p class="my-0 col text-end">9/10</p>
+          <div style="width:96%;" class=" container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col">Dark Souls 2 - Action, RPG, Adventure</p>
+              <p class="my-0 col text-end">9/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:90%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
           </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:90%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col-10">Metal Gear Rising: Revengeance - Action, Hack’n Slash</p>
+              <p class="my-0 col text-end">9/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:90%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col-10">Age of Empires II : Definitive Edition - RTS, Strategy</p>
+              <p class="my-0 col text-end">8/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:80%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col-10">Apex Legends - FPS, Action, Battle Royale</p>
+              <p class="my-0 col text-end">8/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:80%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col-10">Terraria - Adventure, RPG, Creative</p>
+              <p class="my-0 col text-end">8/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:80%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col-10">Fortnite - Action , FPS, Battle Royale</p>
+              <p class="my-0 col text-end">7/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:70%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col-10">Minecraft - Adventure, Creative, RPG</p>
+              <p class="my-0 col text-end">7/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:70%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
+            <div class="row">
+              <p class="my-0 col-10">Dead By Daylight - Horror, Action</p>
+              <p class="my-0 col text-end">7/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:70%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 my-lg-2 px-1">
+            <div class="row">
+              <p class="my-0 col-10">Latale - RPG, MMO, Adventure</p>
+              <p class="my-0 col text-end">7/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:70%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div style="width:96%;" class="container gray-bg my-1 my-lg-2 px-1">
+            <div class="row">
+              <p class="my-0 col-10">Lego Star Wars 2 - Action, Adventure</p>
+              <p class="my-0 col text-end">7/10</p>
+            </div>
+            <div style="padding-bottom:5px;" class="progress-bar-box">
+              <div class="progress">
+                <div class=" bg-warning progress-bar  progress-bar-animated" style="width:70%;" role="progressbar"
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col-10">Metal Gear Rising: Revengeance - Action, Hack’n Slash</p>
-            <p class="my-0 col text-end">9/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:90%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col-10">Age of Empires II : Definitive Edition - RTS, Strategy</p>
-            <p class="my-0 col text-end">8/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:80%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col-10">Apex Legends - FPS, Action, Battle Royale</p>
-            <p class="my-0 col text-end">8/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:80%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col-10">Terraria - Adventure, RPG, Creative</p>
-            <p class="my-0 col text-end">8/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:80%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col-10">Fortnite - Action , FPS, Battle Royale</p>
-            <p class="my-0 col text-end">7/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:70%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col-10">Minecraft - Adventure, Creative, RPG</p>
-            <p class="my-0 col text-end">7/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:70%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 px-1 my-lg-2">
-          <div class="row">
-            <p class="my-0 col-10">Dead By Daylight - Horror, Action</p>
-            <p class="my-0 col text-end">7/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:70%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 my-lg-2 px-1">
-          <div class="row">
-            <p class="my-0 col-10">Latale - RPG, MMO, Adventure</p>
-            <p class="my-0 col text-end">7/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:70%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div style="width:96%;" class="container gray-bg my-1 my-lg-2 px-1">
-          <div class="row">
-            <p class="my-0 col-10">Lego Star Wars 2 - Action, Adventure</p>
-            <p class="my-0 col text-end">7/10</p>
-          </div>
-          <div style="padding-bottom:5px;" class="progress-bar-box">
-            <div class="progress">
-              <div class=" bg-warning progress-bar progress-bar-striped progress-bar-animated" style="width:70%;"
-                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
         <div class="container text-center my-3">
           <img style="width:100px" class="img" src="images/logo-transparent.png" alt="">
         </div>
