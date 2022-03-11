@@ -73,8 +73,8 @@ h5 {
 }
 
 .card:hover {
-  -webkit-box-shadow: black 2px 2px 2px;
-          box-shadow: black 2px 2px 2px;
+  -webkit-box-shadow: black 3px 3px 3px;
+          box-shadow: black 3px 3px 3px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scale(30px);
@@ -146,12 +146,34 @@ h5 {
 }
 
 #contacts a:hover {
-  color: red !important;
+  color: #FED154 !important;
 }
 
 @media screen and (min-width: 800px) {
-  .top10 p {
+  .top10 p, #contacts, #disclaimerInfo {
     font-size: 1.5em;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .img-colored {
+    width: 12vw !important;
+  }
+  nav {
+    padding-bottom: 5px !important;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .page-bg {
+    background: transparent !important;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1760px) {
+  #mainTitle {
+    margin-left: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
