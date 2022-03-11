@@ -55,7 +55,6 @@ a {
 .dropdown-toggle {
   border: none !important;
   background-color: transparent !important;
-  margin: auto;
 }
 
 .dropdown-toggle::after {
@@ -136,9 +135,18 @@ h5 {
   margin: 0;
 }
 
+.dropdown-menu li {
+  font-size: 20px;
+}
+
 .dropdown-menu li:hover {
   color: #FED154 !important;
   background-color: #111418 !important;
+  font-size: 22px;
+}
+
+#contacts a:hover {
+  color: red !important;
 }
 
 @media screen and (min-width: 800px) {
