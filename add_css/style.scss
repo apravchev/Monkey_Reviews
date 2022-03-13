@@ -42,7 +42,7 @@ a {
     text-decoration:none;
     
 }
-.dropdown-toggle {
+.dropdown-toggle, .card {
     border:none !important;
     background-color:transparent !important;
 }
@@ -68,11 +68,11 @@ h5 {
 border-radius:0 !important;
 border:0;
 }
-.card-body{
-   background-color:#FED154;
+.card-body {
+   background-color:#FED154 !important;
 }
-.card-img-top {
-    border:solid 6px #FED154;
+.card-img-top  {
+    border:solid 6px #FED154 !important;
 }
 .no-decoration {
     text-decoration:none !important;
@@ -120,7 +120,7 @@ text-align:start !important;
     }
 }
 @media screen and (min-width: 800px) {
-    .top10 p , #contacts , #disclaimerInfo{
+    .top10 p , #contacts , #disclaimerInfo , .card-body-person , .list-group-person li, .contacts-phones, .contacts-emails {
         font-size:1.5em; 
         transition:0.2s;    
     }
@@ -142,10 +142,42 @@ text-align:start !important;
 }
 @media screen and (min-width: 992px) and (max-width: 1760px){
     #mainTitle {
-        margin-left:100px;
+        margin-left:130px;
     }
 }
-
-
-
+.insta-button img {
+    max-width:120px !important;
+    margin: auto !important;
+}
+.insta-button {
+    border-radius:10px;
+    &:hover {
+        background-color:rgb(109, 57, 57);
+        transition:0.2s;
+    }
+    h4 {
+        color:#FC8787;
+    }
+}
+.back-btn a:hover{
+    color: #FED154 !important;
+}
+.twitter-button {
+    border-radius:10px;
+    &:hover {
+        background-color:#296b80;
+        transition:0.2s;
+    }
+    h4 {
+        color:#54D2FA;
+    }
+    img {
+        max-width:120px !important;
+        margin: auto !important;
+    }
+}
+.card-body-person , .list-group-person li{
+    background: #f5a42bb9 !important;
+    color:black;
+}
 
