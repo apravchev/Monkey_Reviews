@@ -50,12 +50,13 @@ a {
     display:none
 }
 
-#cardMain {
-top:auto;
-background-color:#f5a402b9;
-text-align:start;
+#cardMain , .article-icon{
+top:auto !important;
+background-color:#f5a402b9 !important;
+text-align:start !important;
   line-height: 1.4;
 }
+
 h5 {
     -webkit-text-stroke: 0.3px black;
 }

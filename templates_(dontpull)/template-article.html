@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monkey Reviews</title>
+  <link rel="icon" type="image/png" href="../images/logo-transparent.png" />
+  <link rel="stylesheet" href="../add_css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body style="background-image:url(../images/bg-background-2.jpg); background-size:cover">
+  <nav style="margin:0; padding:1px; gap:0;  background-color:#1E2329;"
+    class="sticky-top navbar navbar-expand-lg navbar-light" id="navBar">
+    <div style="margin:0; padding:0; gap:0;" class="container-fluid">
+      <a class=" navbar-brand d-inline-flex flex-fill p-0 col col-sm-1 col-md-4 col-lg-7" href="#">
+        <img class="d-md-none" style="margin:1px;" id="logo" src="../images/logo.jpg" alt="" srcset="">
+        <h1 class="me-auto" id="mainTitle">Monkey Reviews</h1>
+      </a>
+      <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas">
+        <img src="../images/menu-btn.svg" alt="">
+      </button>
+      <div class="col d-none d-md-flex justify-content-end container col-md-7 dropdown-container ">
+        <div style="margin-left:10px;" class="row justify-content-end ">
+          <div class="dropdown dropdown-toggle col ">
+            <a class="no-decoration dropdown-toggle text-white h5" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Категории
+            </a>
+            <ul class="dropdown-menu bg-dark p-2" aria-labelledby="dropdownMenuLink">
+              <a href="../category_pages/category_action.html" class="text-decoration-none text-white">
+                <li>Action</li>
+              </a>
+              <a href="../category_pages/category_horror.html" class="text-decoration-none text-white">
+                <li>Horror</li>
+              </a>
+              <a href="../category_pages/category_adventure.html" class="text-decoration-none text-white">
+                <li>Adventure</li>
+              </a>
+              <a href="../category_pages/category_mmo.html" class="text-decoration-none text-white">
+                <li>MMO</li>
+              </a>
+              <a href="../category_pages/category_rpg.html" class="text-decoration-none text-white">
+                <li>RPG</li>
+              </a>
+              <a href="../category_pages/category_fps.html" class="text-decoration-none text-white">
+                <li>FPS</li>
+              </a>
+              <a href="../category_pages/category_others.html" class="text-decoration-none text-white">
+                <li>Други...</li>
+              </a>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-toggle col">
+            <a class="no-decoration dropdown-toggle text-white h5" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Платформи
+            </a>
+
+            <ul class="dropdown-menu bg-dark p-2" aria-labelledby="dropdownMenuLink">
+              <a href="../platform_pages/platform_pc.html" class="text-decoration-none text-white">
+                <li>PC</li>
+              </a>
+              <a href="../platform_pages/platform_ps.html" class="text-decoration-none text-white">
+                <li>PS4/5</li>
+              </a>
+              <a href="../platform_pages/platform_xbox.html" class="text-decoration-none text-white">
+                <li>XBOX S/X</li>
+              </a>
+              <a href="../platform_pages/platform_switch.html" class="text-decoration-none text-white">
+                <li>SWITCH</li>
+              </a>
+              <a href="../platform_pages/platform_older.html" class="text-decoration-none text-white">
+                <li>По-стари...</li>
+              </a>
+            </ul>
+          </div>
+          <div class="dropdown  dropdown-toggle col ">
+            <a class="no-decoration dropdown-toggle text-white h5" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              За нас
+            </a>
+            <ul style="left:-35px;" class="dropdown-menu bg-dark p-2" aria-labelledby="dropdownMenuLink">
+              <a href="../about.html" class="text-decoration-none text-white">
+                <li>Нашият екип</li>
+              </a>
+              <a href="../about.html" class="text-decoration-none text-white">
+                <li>Контакти</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-radius:0 0 0 6px; width:210px;" class="offcanvas offcanvas-end shadow" id="offCanvas">
+
+      <div class="offcanvas-header p-1">
+        <h1 class="offcanvas-title display-4">Навигация</h1>
+        <button type="button" class="btn" data-bs-dismiss="offcanvas"><img src="../images/close-btn.svg" alt=""
+            srcset=""></button>
+      </div>
+
+      <div style="border-radius:0 0 0 5px;" class="offcanvas-body d-md-none p-1">
+        <div class="input-group my-1">
+          <input type="search" class="form-control rounded bg-dark" placeholder="Търси за.." aria-label="Search"
+            aria-describedby="search-addon" />
+          <button id="search-button" type="button" class="btn btn-warning">
+            <img style="width:21px;" src="../images/search-btn.svg">
+          </button>
+        </div>
+        <button aria-expanded="true" class="dropdown-toggle text-white h2" data-bs-toggle="collapse"
+          data-bs-target="#categoryList">Категории</button>
+        <div id="categoryList" class="collapse show flex-column h4">
+          <ul>
+            <li><a href="../category_pages/category_action.html" class="text-decoration-none text-white">Action</a></li>
+            <li><a href="../category_pages/category_horror.html" class="text-decoration-none text-white">Horror</a></li>
+            <li><a href="../category_pages/category_adventure.html" class="text-decoration-none text-white">Adventure</a></li>
+            <li><a href="../category_pages/category_mmo.html" class="text-decoration-none text-white">MMO</a></li>
+            <li><a href="../category_pages/category_rpg.html" class="text-decoration-none text-white">RPG</a></li>
+            <li><a href="../category_pages/category_fps.html" class="text-decoration-none text-white">FPS</a></li>
+            <li><a href="../category_pages/category_others.html" class="text-decoration-none text-white">Други...</a></li>
+          </ul>
+        </div>
+        <button aria-expanded="true" style="padding:0;" class="dropdown-toggle text-white h2 container text-start"
+          data-bs-toggle="collapse" data-bs-target="#consoleList">Конзоли</button>
+        <div id="consoleList" class="collapse show  h4">
+          <ul>
+            <li><a href="../platform_pages/platform_pc.html" class="text-decoration-none text-white">PC</a></li>
+            <li><a href="../platform_pages/platform_ps.html" class="text-decoration-none text-white">PS4/5</a></li>
+            <li><a href="../platform_pages/platform_xbox.html" class="text-decoration-none text-white">XBOX S/X</a></li>
+            <li><a href="../platform_pages/platform_switch.html" class="text-decoration-none text-white">SWITCH</a></li>
+            <li><a href="../platform_pages/platform_older.html" class="text-decoration-none text-white">По-стари...</a></li>
+          </ul>
+        </div>
+        <button class="text-white h2 dropdown-toggle " aria-expanded="true" data-bs-toggle="collapse"
+          data-bs-target="#aboutList">За Нас</button>
+        <div id="aboutList" class="collapse show flex-column h4">
+          <ul>
+            <li><a href="../about.html" class="text-decoration-none text-white">Нашият екип</a></li>
+            <li><a href="../about.html" class="text-decoration-none text-white">Контакти</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <div style="background-color:#3B4046;" class="container page-bg">
+    <div class="row justify-content-center ">
+      <div class="row col-sm-11 col-md-9 col-lg-10 object-align-center p-0 mb-1">
+        <div class="col-12 py-1 back-btn"><a class="text-decoration-none text-white h3" href="../index.html"><img
+              src="../images/back-btn.svg" style="width:10px;" alt=""> Обратно</a></div>
+  </div>
+  </div>
+  </div>
+  <footer class="bg-dark text-white">
+    <div class="container py-2" id="contacts">
+      <div class="row ">
+        <div class="col-6 text-center"><a href="../about.html" class="no-decoration text-white ">За нас</a></div>
+        <div class="col-6 text-center"><a href="../about.html" class=" no-decoration text-white "> Контакти </a></div>
+        <hr style="width:75%; margin:auto;" class="col-12 my-1">
+        <p class="text-center col-12 my-0">“Monkey Reviews” Всички права запазени.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
