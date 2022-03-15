@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body {
+    min-height:100vh !important;
+    display: flex;
+  flex-direction: column;
+}
+.page-bg {
+    flex-grow:1;
+}
 #navBar {
     background-color:#1E2329;
     padding:0;
