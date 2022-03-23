@@ -47,8 +47,7 @@ body {
     color:white;
 }
 a {
-    text-decoration:none;
-    
+    text-decoration:none;  
 }
 .dropdown-toggle, .card {
     border:none !important;
@@ -220,4 +219,35 @@ text-align:start !important;
   background-repeat: no-repeat;
   background-size: 20px 20px;
   }
+}
+@media screen and (min-width: 998px) {
+
+.vert-bar {
+    list-style: none;
+  }
+  .vert-bar >li {
+    position: relative;
+  }
+  .vert-bar>li:before {
+    content: '\25CF';
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .vert-bar>li:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-left: 2px solid black;
+    margin-left: 5px;
+    height: 100%;
+  }
+  .vert-bar >li:first-of-type:after {
+    top: 50%;
+  }
+  .vert-bar >li:last-of-type:after {
+    top: -50%;
+  }
+
+
 }
